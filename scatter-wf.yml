@@ -1,0 +1,9 @@
+infiles:
+  - class: File
+    path: file1
+  - class: File
+    path: file2
+  - class: File
+    path: file3
+
+concatenatedFile: file-step2-result
