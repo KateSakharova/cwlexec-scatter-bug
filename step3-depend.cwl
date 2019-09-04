@@ -12,10 +12,10 @@ inputs:
 
 arguments:
   - position: 2
-    valueFrom: $(inputs.infile.basename).step3-out
+    valueFrom: $(inputs.infile.nameroot).step3-out
 
 outputs:
   - id: outfile
     type: File
     outputBinding:
-      glob: $(inputs.infile.basename).step3-out
+      glob: $(inputs.infile.nameroot).step3-out
