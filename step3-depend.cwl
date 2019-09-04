@@ -8,10 +8,10 @@ inputs:
   - id: infile
     type: File
     inputBinding:
-      position: 1
+      position: 0
 
 arguments:
-  - position: 2
+  - position: 1
     valueFrom: $(inputs.infile.nameroot).step3-out
 
 outputs:

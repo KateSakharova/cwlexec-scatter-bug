@@ -7,7 +7,7 @@ inputs:
   - id: files
     type: 'File[]'
     inputBinding:
-      position: 1
+      position: 0
     streamable: true
   - id: outputFileName
     type: string
