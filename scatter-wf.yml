@@ -1,9 +1,9 @@
 infiles:
   - class: File
-    path: file1
+    path: file1.ext
   - class: File
-    path: file2
+    path: file2.ext
   - class: File
-    path: file3
+    path: file3.ext
 
 concatenatedFile: file-step2-result
