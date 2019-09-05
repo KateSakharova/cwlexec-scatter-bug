@@ -7,10 +7,12 @@ requirements:
 
 
 inputs:
-  - id: infiles
-    type: File[]
-  - id: concatenatedFile-wf
-    type: string
+  - id: infile
+    type: File
+#  - id: infiles
+#    type: File[]
+#  - id: concatenatedFile-wf
+#    type: string
 
 outputs:
   - id: finalOutFile
@@ -21,8 +23,9 @@ steps:
   step-wf-1:
     run: scatter-wf.cwl
     in:
-      infiles: infiles
-      concatenatedFile: concatenatedFile-wf
+      infile: infile
+      #infiles: infiles
+      #concatenatedFile: concatenatedFile-wf
     out: [ finalOutFile ]
 
   step-wf-2:
