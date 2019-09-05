@@ -6,4 +6,4 @@ infiles:
   - class: File
     path: file3.ext
 
-concatenatedFile: file-step2-result.ext
+concatenatedFile-wf: file-step2-result.ext
