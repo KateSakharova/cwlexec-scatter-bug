@@ -13,14 +13,14 @@ outputs:
 
 steps:
 
-  step-subwf-1:
-    run: step1-scatter.cwl
-    in:
-      infile: input
-    out: [ outfile ]
+#  step-subwf-1:
+#    run: step1-scatter.cwl
+#    in:
+#      infile: input
+#    out: [ outfile ]
 
   step-subwf-2:
     run: grep.cwl
     in:
-      input: step-subwf-1/outfile
+      input: input #step-subwf-1/outfile
     out: [ grep2 ]
