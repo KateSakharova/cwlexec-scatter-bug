@@ -15,7 +15,7 @@ inputs:
 outputs:
   - id: finalOutFile
     type: File
-    outputSource: step-wf-2/outfile
+    outputSource: step-wf-2/finalOutFile-sbwf
 
 steps:
   step-wf-1:
@@ -26,7 +26,7 @@ steps:
     out: [ finalOutFile ]
 
   step-wf-2:
-    run: step1-scatter.cwl
+    run: subworkflow.cwl
     in:
-      infile: step-wf-1/finalOutFile
-    out: [ outfile ]
+      input: step-wf-1/finalOutFile
+    out: [ finalOutFile-sbwf ]
