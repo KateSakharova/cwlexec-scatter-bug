@@ -1,3 +1,4 @@
 input:
   class: File
-  path: file-step2-result.step1-out
+  path: file.txt
+pattern: '2'
